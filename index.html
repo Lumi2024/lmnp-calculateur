@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calcul rentabilité LMNP – Outil gratuit</title>
+<meta name="description" content="Calculez gratuitement la rentabilité LMNP : rendement net, cashflow, scénarios et graphiques." />
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+<h1>Calculateur de rentabilité LMNP</h1>
+<p>Outil gratuit pour investisseurs en location meublée</p>
+</header>
+
+
+<main>
+<section class="form-section">
+<h2>Vos données</h2>
+<form id="lmnpForm">
+<input type="number" id="price" placeholder="Prix du bien (€)" required />
+<input type="number" id="rent" placeholder="Loyer mensuel (€)" required />
+<input type="number" id="charges" placeholder="Charges annuelles (€)" value="0" />
+<input type="number" id="taxes" placeholder="Taxes annuelles (€)" value="0" />
+<input type="number" id="amort" placeholder="Amortissement annuel (€)" value="0" />
+<button type="submit">Calculer</button>
+</form>
+</section>
+
+
+<section class="result-section" id="result"></section>
+
+
+<section>
+<h2>Projection sur 5 ans</h2>
+<canvas id="chart"></canvas>
+</section>
+
+
+<section class="kofi">
+<h2>Aller plus loin</h2>
+<p>PDF premium détaillé (calculs, tableaux, conseils fiscaux)</p>
+<a href="https://ko-fi.com/TON_LIEN" target="_blank">📘 Acheter le PDF – 1 €</a>
+</section>
+
+
+<section class="disclaimer">
+<p>⚠️ Outil indicatif. Consultez un expert-comptable pour une analyse fiscale complète.</p>
+</section>
+</main>
+
+
+<script src="calculator.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
