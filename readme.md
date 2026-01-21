@@ -10,7 +10,7 @@ Outil gratuit en ligne pour calculer la **rentabilité nette d’un investisseme
 - Approche pédagogique (LMNP réel)
 
 ## 🌐 Site en ligne
-👉 https://TON_PSEUDO.github.io/lmnp-calculateur/
+👉 https://lumi2024.github.io/lmnp-calculateur/
 
 ## 📘 PDF Premium
 Version détaillée et imprimable (1 €) :
