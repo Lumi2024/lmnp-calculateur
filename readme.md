@@ -14,7 +14,7 @@ Outil gratuit en ligne pour calculer la **rentabilité nette d’un investisseme
 
 ## 📘 PDF Premium
 Version détaillée et imprimable (1 €) :
-👉 https://ko-fi.com/TON_LIEN
+👉 [https://ko-fi.com/TON_LIEN](https://ko-fi.com/s/020c856f84)
 
 ## ⚠️ Avertissement
 Outil fourni à titre indicatif.
