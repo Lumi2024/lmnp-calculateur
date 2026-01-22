@@ -1,0 +1,35 @@
+name: GitHub Traffic Stats
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Fetch Traffic Data
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          # Création d'un dossier pour les stats
+          mkdir -p traffic-data
+          
+          # Récupération des vues via l'API GitHub
+          curl -H "Authorization: token $TOKEN" \
+               https://api.github.com/repos/${{ github.repository }}/traffic/views \
+               > traffic-data/views.json
+          
+          # Récupération des visiteurs uniques
+          curl -H "Authorization: token $TOKEN" \
+               https://api.github.com/repos/${{ github.repository }}/traffic/clones \
+               > traffic-data/clones.json
+
+      - name: Archive Stats
+        uses: actions/upload-artifact@v4
+        with:
+          name: traffic-stats
+          path: traffic-data/
